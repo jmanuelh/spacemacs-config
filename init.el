@@ -39,12 +39,17 @@ values."
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
      helm
+     prettier
      auto-completion
+     html
      ;; better-defaults
      emacs-lisp
      git
      markdown
      org
+     (typescript :variables
+                 typescript-fmt-on-save t
+                 typescript-fmt-tool 'prettier)
      ;; (shell :variables
      ;;        shell-default-height 30
      ;;        shell-default-position 'bottom)
@@ -104,6 +109,7 @@ values."
    ;; section of the documentation for details on available variables.
    ;; (default 'vim)
    dotspacemacs-editing-style 'vim
+   dotspacemacs-mode-line-theme 'spacemacs
    ;; If non nil output loading progress in `*Messages*' buffer. (default nil)
    dotspacemacs-verbose-loading nil
    ;; Specify the startup banner. Default value is `official', it displays
