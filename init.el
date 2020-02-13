@@ -49,7 +49,7 @@ values."
      (org :variables
        org-enable-reveal-js-support t
        org-reveal-js '~/reveal.js/
-       org-projectile-file ~/TODOs.org
+       org-projectile-file "~/TODOs.org"
        )
      ;; spell-checking
      (typescript :variables
